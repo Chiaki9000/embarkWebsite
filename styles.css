@@ -1,11 +1,24 @@
-/* Hide the checkbox */
-#menu-toggle {
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAV MENU */
+
+#menu-toggle { 
   position: absolute;
-  left: -9999px;
+  left: -9999px; /* Hide the checkbox */
 }
 
 body {
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  overflow-x: hidden; /* Prevent horizontal nav */
 }
 
 .menu-icon {
