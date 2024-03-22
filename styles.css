@@ -87,13 +87,14 @@ body {
   height: auto;
 }
 
-.active-image{
+.active-image img{
   position: relative; /* Make sure the container is positioned */
   width: 100%; /* Adjust the width as needed */
-  height: 300px; /* Adjust the height as needed */
+  height: 600px; /* Adjust the height as needed */
   background-size: cover; /* Make sure the image covers the container */
   background-position: center; /* Center the image */
-  object-fit: none;
+  object-fit: cover;
+  object-position: 0 60%;
 }
 
 .active-image h1{
