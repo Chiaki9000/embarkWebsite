@@ -72,7 +72,7 @@ body {
   left: 250px; /* Move the menu icon along with the menu */
 }
 .header-logo{
-  width: 100%;
+  width: 96%;
   display : flex;
   align-items: center;
   justify-content : center;
@@ -85,4 +85,24 @@ body {
   max-height: 100%;
   max-width: 63px;
   height: auto;
+}
+
+.active-image{
+  position: relative; /* Make sure the container is positioned */
+  width: 100%; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  background-size: cover; /* Make sure the image covers the container */
+  background-position: center; /* Center the image */
+  object-fit: none;
+}
+
+.active-image h1{
+  position: absolute; /* Position the text absolutely */
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: white; /* Set text color */
+  font-size: 70px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  font-family: 'Montserrat', sans-serif;
 }
