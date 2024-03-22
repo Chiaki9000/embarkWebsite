@@ -102,8 +102,10 @@ body {
   top: 50%; /* Adjust vertical position */
   left: 50%; /* Adjust horizontal position */
   transform: translate(-50%, -50%); /* Center the text */
+  text-align: center;
   color: white; /* Set text color */
   font-size: 70px; /* Set font size */
   font-weight: bold; /* Set font weight */
   font-family: 'Montserrat', sans-serif;
+  
 }
