@@ -109,3 +109,28 @@ body {
   font-family: 'Montserrat', sans-serif;
   
 }
+
+
+
+/* OVERLAY */
+
+.overlay {
+  display: none; /* Hide overlays by default */
+  position: fixed; /* Use fixed or absolute as per requirement */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%; /* Adjust as per requirement */
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px; /* Optional: for rounded corners */
+}
