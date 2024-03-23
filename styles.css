@@ -125,11 +125,42 @@ body {
 }
 
 #text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
   color: #000;
   font-family: "Open Sans";
-  font-size: 18px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  line-height: normal;
   font-style: normal;
+}
+
+.overlay-content h2{
+  color: #4D4D4D;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 150%; /* 25.5px */
+  letter-spacing: 0.51px;
+}
+
+.overlay-content h3{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.76px;
+}
+
+.overlay-content p{
+  font-size: 18px;
   font-weight: 400;
   line-height: normal;
 }
+
+
+
+
+
+
+
 
