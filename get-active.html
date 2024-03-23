@@ -36,18 +36,9 @@
 
         <p>Find out how to get active and lead a healthy lifestyle.</p>
 
-        <!-- Club Info Part -->
-        <div class="club-info">
-            <h2>Women In Clean Tech</h2>
-            <h3>SUSTAINABLE TECH</h3>
-            <p>Women in Clean Tech is an SFU-Surrey based club aspiring to connect female students in STEM. Group members develop expertise with cutting-edge clean technologies through WICT’s active online network and can also hone their technical skills by participating in clean technology design competitions.</p>
-            <img src="placeholder_image.jpg" alt="Placeholder Image">
-            <button class="overlay-button" id="wict-overlay-btn">More Info</button>
-        </div>
-
-        <!-- Overlay for Women In Clean Tech -->
-        <div class="overlay" id="wict-overlay">
-            <div class="overlay-content">
+         <!-- Overlay for Women In Clean Tech -->
+        <div class="overlay" id="wcit-overlay"  onclick="off()">
+            <div class="overlay-content" id = "text">
                 <h2>Women In Clean Tech (overlay)</h2>
                 <h3>SUSTAINABLE TECH</h3>
                 <p>Women in Clean Tech is an SFU-Surrey based club aspiring to connect female students in STEM. Group members develop expertise with cutting-edge clean technologies through WICT’s active online network and can also hone their technical skills by participating in clean technology design competitions.</p>
@@ -58,6 +49,17 @@
                 </div>
             </div>
         </div>
+
+
+ <!-- Club Info Part -->
+        <div class="club-info">
+            <h2>Women In Clean Tech</h2>
+            <h3>SUSTAINABLE TECH</h3>
+            <p>Women in Clean Tech is an SFU-Surrey based club aspiring to connect female students in STEM. Group members develop expertise with cutting-edge clean technologies through WICT’s active online network and can also hone their technical skills by participating in clean technology design competitions.</p>
+            <img src="placeholder_image.jpg" alt="Placeholder Image">
+            <button class="overlay-button" id="wict-overlay-btn" onclick="on()">More Info</button>
+        </div>
+
 
         <!-- Placeholder Club Parts -->
         <!-- Placeholder Club 1 -->
@@ -82,6 +84,16 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            function on() {
+              document.getElementById("wcit-overlay").style.display = "block";
+            }
+            
+            function off() {
+              document.getElementById("wcit-overlay").style.display = "none";
+            }
+            </script>
 
         <!-- Placeholder Club 2 -->
         <div class="placeholder-club">
@@ -128,6 +140,8 @@
                 </div>
             </div>
         </div>
+
+        
     </section>
 
 </body>
