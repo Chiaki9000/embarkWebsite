@@ -33,7 +33,7 @@ body {
 /* Positioning the title text */
 .title{
     font-family: Montserrat;
-    font-size: 50px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 800;
     line-height: 115%;
@@ -54,12 +54,12 @@ body {
 .title-text p{
   position: relative;
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding-bottom: 12px;
-  max-width: 380px;
+  max-width: 370px;
   left: 115px;
 
 }
@@ -77,6 +77,10 @@ body {
   max-height: 560px;
   object-fit: cover;
   object-position: 100% 0; */
+}
+
+#call-to-action{
+  background-color: #E8E2d5;
 }
 
 .menu-icon {
@@ -250,7 +254,7 @@ body {
 /* FOOTER */
 
 #footer {
-  background-color: #4D4D4D;
+  background-color: #007f63;
   color: white;
   padding: 20px;
   text-align: center;
