@@ -59,7 +59,7 @@ body {
   font-weight: 400;
   line-height: normal;
   padding-bottom: 12px;
-  max-width: 370px;
+  max-width: 380px;
   left: 115px;
 
 }
@@ -80,7 +80,40 @@ body {
 }
 
 #call-to-action{
-  background-color: #E8E2d5;
+  background-color: #F47d29;
+  color: white;
+  padding-top: 108px;
+}
+
+.sub-title-text{
+  padding-left: 9.3%
+}
+
+.sub-title-text h2{
+  font-family: "Montserrat";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.69px;
+}
+
+.sub-title-text p{
+  position: relative;
+  left: 85px;
+  top: 27px;
+  max-width: 602px;
+  font-family: "Open Sans";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 106px;
+}
+
+.become-linked{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .menu-icon {
@@ -155,7 +188,7 @@ body {
   object-fit: cover;
   object-position: 0 60%;
   z-index:-1;
-}
+} 
 
 .active-image h1{
   position: relative; /* Position the text absolutely */
