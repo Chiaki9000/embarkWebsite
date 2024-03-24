@@ -95,13 +95,14 @@ body {
   background-position: center; /* Center the image */
   object-fit: cover;
   object-position: 0 60%;
+  z-index:-1;
 }
 
 .active-image h1{
-  position: absolute; /* Position the text absolutely */
+  position: relative; /* Position the text absolutely */
   top: 50%; /* Adjust vertical position */
   left: 50%; /* Adjust horizontal position */
-  transform: translate(-50%, -50%); /* Center the text */
+  transform: translate(-50%, -400%); /* Center the text */
   text-align: center;
   color: white; /* Set text color */
   font-size: 70px; /* Set font size */
@@ -110,6 +111,14 @@ body {
   
 }
 
+.active-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.club-info{
+  max-width: 441px;
+}
 
 
 /* OVERLAY */
@@ -128,11 +137,11 @@ body {
 .overlay-content {
   position: relative;
   top: 10%; /* Adjust as per requirement */
-  width: 80%;
+  max-width: 961px;
   margin: auto;
   padding: 20px;
   background: white;
-  border-radius: 5px; /* Optional: for rounded corners */
+  border-radius: 20px; /* Optional: for rounded corners */
 }
 #wcit-overlay {
   position: fixed;
