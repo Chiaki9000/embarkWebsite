@@ -2,8 +2,13 @@
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
-/* NAV MENU */
 
+
+
+
+
+
+/* NAV MENU */
 #menu-toggle { 
   position: absolute;
   left: -9999px; /* Hide the checkbox */
@@ -121,8 +126,13 @@ body {
 }
 
 
-/* OVERLAY */
 
+
+
+
+
+
+/* OVERLAY */
 .overlay {
   display: none; /* Hide overlays by default */
   position: fixed; /* Use fixed or absolute as per requirement */
@@ -192,8 +202,12 @@ body {
 
 
 
-/* FOOTER */
 
+
+
+
+
+/* FOOTER */
 #footer {
   background-color: #4D4D4D;
   color: white;
