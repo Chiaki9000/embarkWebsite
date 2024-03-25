@@ -1,146 +1,140 @@
-*{
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-
-
-
-
-
-/* NAV MENU */
-#menu-toggle { 
-  position: absolute;
-  left: -9999px; /* Hide the checkbox */
+button:focus, a:focus, input:focus {
+  background-color: black;
+  color: white;
+  opacity: 50%;
 }
 
-.header{
-  display:flex;
+#menu-toggle {
+  position: absolute;
+  left: -9999px;
+}
+
+.header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   background: #D9D9D9;
   border: none;
 }
 
 body {
-  overflow-x: hidden; /* Prevent horizontal nav */
- 
+  overflow-x: hidden;
 }
 
-.title-text{
-  padding-left:  7%;
-  padding-top: 100px;
-  color:#000;
+.title-text {
+  padding-left: 0.4375rem;
+  padding-top: 6.25rem;
+  color: #000;
 }
 
-/* Positioning the title text */
-.title{
-    font-family: Montserrat;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 115%;
-
+.title {
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 115%;
 }
 
-.second-line{
-    padding-left: 103px;
-    padding-top: 25px;
+.second-line {
+  padding-left: 6.4375rem;
+  padding-top: 1.5625rem;
 }
 
-/* Placing the text inside */
-.main-information{
+.main-information {
   position: relative;
-  padding-top: 45px;
+  padding-top: 2.8125rem;
 }
 
-.title-text p{
+.title-text p {
   position: relative;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 12px;
-  max-width: 380px;
-  left: 115px;
-
-}
-/* Integrating image */
-.main-tp{
-  display:flex;
-  padding-bottom: 210px;
+  padding-bottom: 0.75rem;
+  max-width: 23.75rem;
+  left: 7.1875rem;
 }
 
-.main-tp img{
+.main-tp {
+  display: flex;
+  padding-bottom: 13.125rem;
+}
+
+.main-tp img {
   position: relative;
   margin-left: auto;
-  padding-top: 70px;
-  max-width: 45%;
-  max-height: 560px;
+  padding-top: 4.375rem;
+  max-width: 2.8125rem;
+  max-height: 35rem;
   object-fit: cover;
   object-position: 100% 0;
 }
 
-#call-to-action{
+#call-to-action {
   background-color: #F47d29;
   color: white;
-  padding-top: 108px;
+  padding-top: 6.75rem;
 }
 
-.sub-title-text{
-  padding-left: 9.3%
+.sub-title-text {
+  padding-left: 0.5813rem;
 }
 
-.sub-title-text h2{
+.sub-title-text h2 {
   font-family: "Montserrat";
-  font-size: 46px;
+  font-size: 2.875rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: -0.69px;
 }
 
-.sub-title-text p{
+.sub-title-text p {
   position: relative;
-  left: 85px;
-  top: 27px;
-  max-width: 602px;
+  left: 5.3125rem;
+  top: 1.6875rem;
+  max-width: 37.625rem;
   font-family: "Open Sans";
-  font-size: 23px;
+  font-size: 1.4375rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 106px;
+  padding-bottom: 6.625rem;
 }
 
-.become-linked{
+.become-linked {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .menu-icon {
-  display :inline-block; /*or inline works as well*/
-  position : absolute;
-  left : 30px;
+  display: inline-block;
+  position: absolute;
+  left: 1.875rem;
   cursor: pointer;
-  /* position: relative; Ensure z-index works */
-  z-index: 999; /* Set a high z-index value */
-  font-size: 26px;
+  z-index: 999;
+  font-size: 1.625rem;
 }
 
 .nav-menu {
   position: fixed;
   top: 0;
-  left: -250px; /* Initially hidden */
-  width: 250px;
+  left: -15.625rem;
+  width: 15.625rem;
   height: 100%;
   background-color: #333;
-  padding-top: 20px;
-  transition: left 0.3s; /* Transition effect */
+  padding-top: 1.25rem;
+  transition: left 0.3s;
 }
 
 .nav-menu ul {
@@ -149,7 +143,7 @@ body {
 }
 
 .nav-menu li {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
 }
 
 .nav-menu li a {
@@ -161,30 +155,29 @@ body {
   background-color: #555;
 }
 
-/* Show nav menu when menu icon is clicked */
 #menu-toggle:checked + header .nav-menu {
   left: 0;
 }
 
 #menu-toggle:checked + header .menu-icon {
-  left: 250px; /* Move the menu icon along with the menu */
+  left: 15.625rem;
 }
-.header-logo{
-  width: 96%;
-  display : flex;
+
+.header-logo {
+  width: 6rem;
+  display: flex;
   align-items: center;
-  justify-content : center;
+  justify-content: center;
 }
 
 .header-logo img {
-
-  /*removed display inline-block*/
   width: auto;
   max-height: 100%;
-  max-width: 63px;
+  max-width: 3.9375rem;
   height: auto;
 }
 
+<<<<<<< Updated upstream
 .active-image {
   position: relative;
   z-index:-1;
@@ -232,50 +225,66 @@ body {
   top: 50%;
   left: 47%;
   transform: translate(-47%, -50%);
+=======
+.active-image img {
+  position: relative;
+  width: 100%;
+  height: 37.5rem;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: 0 60%;
+  z-index: -1;
+>>>>>>> Stashed changes
 }
 
-.italics{
+.active-image h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -400%);
+  text-align: center;
+  color: white;
+  font-size: 4.375rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.italics {
   font-style: italic;
   font-weight: 600;
 }
 
-.active-grid{
+.active-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr;
 }
 
-.club-info{
-  max-width: 441px;
+.club-info {
+  max-width: 27.5625rem;
 }
 
-
-
-
-
-
-
-
-/* OVERLAY */
 .overlay {
-  display: none; /* Hide overlays by default */
-  position: fixed; /* Use fixed or absolute as per requirement */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 1000; /* Ensure it's on top */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 .overlay-content {
   position: relative;
-  top: 10%; /* Adjust as per requirement */
-  max-width: 961px;
+  top: 10%;
+  max-width: 60.0625rem;
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
   background: white;
-  border-radius: 20px; /* Optional: for rounded corners */
+  border-radius: 1.25rem;
 }
+
 #wcit-overlay {
   position: fixed;
   display: none;
@@ -285,72 +294,73 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
   cursor: pointer;
 }
 
-#text{
+#text {
   position: absolute;
   top: 50%;
   left: 50%;
   color: #000;
   font-family: "Open Sans";
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   line-height: normal;
   font-style: normal;
 }
 
-.overlay-content h2{
+.overlay-content h2 {
   color: #4D4D4D;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 400;
-  line-height: 150%; /* 25.5px */
+  line-height: 150%;
   letter-spacing: 0.51px;
 }
 
-.overlay-content h3{
-  font-size: 40px;
+.overlay-content h3 {
+  font-size: 2.5rem;
   font-weight: 600;
-  line-height: 120%; /* 48px */
+  line-height: 120%;
   letter-spacing: -0.76px;
 }
 
-.overlay-content p{
-  font-size: 18px;
+.overlay-content p {
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: normal;
 }
 
-
-
-
-
-
-
-
-/* FOOTER */
 #footer {
   background-color: #007f63;
   color: white;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
 }
 
 .footer-content p {
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
-/* Add this to ensure the footer sticks to the bottom if the content is not tall enough */
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
+.header-logo {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-body {
-  flex: 1;
+.header-logo img {
+  max-width: 5%;
+  height: auto;
+}
+
+.main-tp img {
+  position: relative;
+  margin-left: auto;
+  padding-top: 4.375rem;
+  max-width: 90%;
+  max-height: 35rem;
+  object-fit: cover;
+  object-position: 95% 0;
 }
