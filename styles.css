@@ -29,6 +29,98 @@ body {
  
 }
 
+.title-text{
+  padding-left:  7%;
+  padding-top: 100px;
+  color:#000;
+}
+
+/* Positioning the title text */
+.title{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 115%;
+
+}
+
+.second-line{
+    padding-left: 103px;
+    padding-top: 25px;
+}
+
+/* Placing the text inside */
+.main-information{
+  position: relative;
+  padding-top: 45px;
+}
+
+.title-text p{
+  position: relative;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 12px;
+  max-width: 380px;
+  left: 115px;
+
+}
+/* Integrating image */
+.main-tp{
+  display:flex;
+  padding-bottom: 210px;
+}
+
+.main-tp img{
+  position: relative;
+  margin-left: auto;
+  padding-top: 70px;
+  max-width: 45%;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: 100% 0; */
+}
+
+#call-to-action{
+  background-color: #F47d29;
+  color: white;
+  padding-top: 108px;
+}
+
+.sub-title-text{
+  padding-left: 9.3%
+}
+
+.sub-title-text h2{
+  font-family: "Montserrat";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.69px;
+}
+
+.sub-title-text p{
+  position: relative;
+  left: 85px;
+  top: 27px;
+  max-width: 602px;
+  font-family: "Open Sans";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 106px;
+}
+
+.become-linked{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .menu-icon {
   display :inline-block; /*or inline works as well*/
   position : absolute;
@@ -101,7 +193,7 @@ body {
   object-fit: cover;
   object-position: 0 60%;
   z-index:-1;
-}
+} 
 
 .active-image h1{
   position: relative; /* Position the text absolutely */
@@ -209,7 +301,7 @@ body {
 
 /* FOOTER */
 #footer {
-  background-color: #4D4D4D;
+  background-color: #007f63;
   color: white;
   padding: 20px;
   text-align: center;
