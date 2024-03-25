@@ -68,14 +68,12 @@ body {
 .main-tp {
   display: flex;
   padding-bottom: 13.125rem;
-  object-fit: cover;
-  object-position: 100% 0;
   padding-left: 5.3%;
 }
 
 #call-to-action {
-  background-color: #F47d29;
-  color: white;
+  background-color: #BCDFE7;
+  color: black;
   padding-top: 6.75rem;
   padding-left: 7.3%;
 }
@@ -346,8 +344,8 @@ body {
 
 .become-linked a {
   display: inline-block;
-  background-color: #007BFF;
-  color: white;
+  background-color: #F47d29;
+  color: black;
   text-decoration: none;
   padding: 10px 20px;
   margin: 0 10px;
