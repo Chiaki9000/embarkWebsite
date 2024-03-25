@@ -209,6 +209,11 @@ body {
   
 }
 
+.italics{
+  font-style: italic;
+  font-weight: 600;
+}
+
 .active-grid{
   display: grid;
   grid-template-columns: 1fr 1fr
