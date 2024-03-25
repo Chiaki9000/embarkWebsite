@@ -1,20 +1,26 @@
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-button:focus, a:focus, input:focus {
+/* Focus Styles */
+button:focus,
+a:focus,
+input:focus {
   background-color: black;
   color: white;
   opacity: 50%;
 }
 
+/* Menu Toggle */
 #menu-toggle {
   position: absolute;
   left: -9999px;
 }
 
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -25,10 +31,12 @@ button:focus, a:focus, input:focus {
   border: none;
 }
 
+/* Body */
 body {
   overflow-x: hidden;
 }
 
+/* Title Text */
 .title-text {
   padding-left: 0.4375rem;
   padding-top: 6.25rem;
@@ -43,11 +51,13 @@ body {
   line-height: 115%;
 }
 
+/* Second Line For Title */
 .second-line {
   padding-left: 6.4375rem;
   padding-top: 1.5625rem;
 }
 
+/* Main Information */
 .main-information {
   position: relative;
   padding-top: 2.8125rem;
@@ -71,6 +81,7 @@ body {
   padding-left: 5.3%;
 }
 
+/* Call to Action */
 #call-to-action {
   background-color: #BCDFE7;
   color: black;
@@ -78,6 +89,7 @@ body {
   padding-left: 7.3%;
 }
 
+/* Sub Title Text */
 .sub-title-text {
   padding-left: 0.5813rem;
 }
@@ -104,11 +116,13 @@ body {
   padding-bottom: 6.625rem;
 }
 
+/* Become Linked */
 .become-linked {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* Menu Icon */
 .menu-icon {
   display: inline-block;
   position: absolute;
@@ -118,6 +132,7 @@ body {
   font-size: 1.625rem;
 }
 
+/* Navigation Menu */
 .nav-menu {
   position: fixed;
   top: 0;
@@ -155,6 +170,7 @@ body {
   left: 15.625rem;
 }
 
+/* Header Logo */
 .header-logo {
   width: 6rem;
   display: flex;
@@ -165,10 +181,11 @@ body {
 .header-logo img {
   width: auto;
   max-height: 100%;
-  max-width: 3.9375rem;
+  max-width: 4rem;
   height: auto;
 }
 
+/* Active Image */
 .active-image {
   position: relative;
   z-index: -1;
@@ -192,6 +209,7 @@ body {
   z-index: -1;
 }
 
+/* Bike Container */
 .bike-container {
   display: flex;
 }
@@ -204,12 +222,14 @@ body {
   left: 0.625rem;
 }
 
+/* Active Header Secondary */
 .active-header-secondary {
   position: relative;
   bottom: 1.25rem;
   left: 1.875rem;
 }
 
+/* Active Header */
 .active-header{
   position: absolute;
   top: 50%;
@@ -226,20 +246,24 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Italics */
 .italics {
   font-style: italic;
   font-weight: 600;
 }
 
+/* Active Grid */
 .active-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+/* Club Info */
 .club-info {
   max-width: 27.5625rem;
 }
 
+/* Overlay */
 .overlay {
   display: none;
   position: fixed;
@@ -254,13 +278,14 @@ body {
 .overlay-content {
   position: relative;
   top: 10%;
-  max-width: 60.0625rem;
+  max-width: 60rem;
   margin: auto;
   padding: 1.25rem;
   background: white;
   border-radius: 1.25rem;
 }
 
+/* WCIT Overlay */
 #wcit-overlay {
   position: fixed;
   display: none;
@@ -275,6 +300,7 @@ body {
   cursor: pointer;
 }
 
+/* Text */
 #text {
   position: absolute;
   top: 50%;
@@ -308,6 +334,7 @@ body {
   line-height: normal;
 }
 
+/* Footer */
 #footer {
   background-color: #007f63;
   color: white;
@@ -319,6 +346,7 @@ body {
   margin: 0.625rem 0;
 }
 
+/* Header Logo */
 .header-logo {
   width: 100%;
   display: flex;
@@ -331,10 +359,10 @@ body {
   height: auto;
 }
 
+/* Main TP Image */
 .main-tp img {
   position: relative;
   margin-left: auto;
- 
   padding-top: 4.375rem;
   max-width: 50%;
   max-height: 35rem;
@@ -342,6 +370,7 @@ body {
   object-position: 95% 0;
 }
 
+/* Menu Button */
 .become-linked a {
   display: inline-block;
   background-color: #F47d29;
@@ -353,21 +382,23 @@ body {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.become-linked a:hover, .become-linked a:focus {
+.become-linked a:hover,
+.become-linked a:focus {
   background-color: #0056b3;
   color: white;
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
   .become-linked {
-      grid-template-columns: 1fr;
-      text-align: center;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
+
   .become-linked a {
-      display: block;
-      margin: 10px auto;
+    display: block;
+    margin: 10px auto;
   }
 }
