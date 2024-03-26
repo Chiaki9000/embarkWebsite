@@ -6,7 +6,9 @@
 }
 
 body {
-  font-family: Open Sans;
+  font-family: Open Sans, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Focus Styles */
@@ -25,7 +27,7 @@ input:focus {
 }
 
 /* Header */
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,12 +35,12 @@ input:focus {
   height: 6.25rem;
   background: #D9D9D9;
   border: none;
-}
+} */
 
 /* Body */
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 /* Title Text */
 .title-text {
@@ -57,8 +59,8 @@ body {
 
 /* Second Line For Title */
 .second-line {
-  padding-left: 6.4375rem;
-  padding-top: 1.5625rem;
+  padding-left: 6.4rem;
+  padding-top: 1.6rem;
 }
 
 /* Main Information */
@@ -137,15 +139,16 @@ body {
 }
 
 /* Navigation Menu */
-.nav-menu {
+/* .nav-menu {
   position: fixed;
   top: 0;
-  left: -15.625rem;
+  right: 0;
   width: 15.625rem;
   height: 100%;
   background-color: #333;
   padding-top: 1.25rem;
-  transition: left 0.3s;
+  transition: transform 0.3s;
+  transform: translateX(100%);
 }
 
 .nav-menu ul {
@@ -166,28 +169,30 @@ body {
   background-color: #555;
 }
 
-#menu-toggle:checked + header .nav-menu {
-  left: 0;
+@media screen and (max-width: 768px) {
+  .nav-menu {
+      width: 100%;
+  }
 }
 
-#menu-toggle:checked + header .menu-icon {
-  left: 15.625rem;
+.menu-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 999;
+  color: white;
+  font-size: 1.5rem;
 }
 
-/* Header Logo */
-.header-logo {
-  width: 6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.menu-icon:hover {
+  color: #aaa;
 }
 
-.header-logo img {
-  width: auto;
-  max-height: 100%;
-  max-width: 4rem;
-  height: auto;
-}
+.menu-open .nav-menu {
+  transform: translateX(0);
+} */
+
 
 /* Active Image */
 .active-image {
@@ -374,16 +379,21 @@ body {
   object-position: 95% 0;
 }
 
+
+
 /* Menu Button */
 .become-linked a {
   display: inline-block;
-  background-color: #F47d29;
-  color: black;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s;
+	color: black;
+	background-color:#F47d29;
+	font-size: 1.5rem;
+	padding: 0.5rem 0.75rem;
+  margin: 0 0.5rem;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+  border-radius: 0.5rem;
 }
 
 .become-linked a:hover,
@@ -405,4 +415,47 @@ body {
     display: block;
     margin: 10px auto;
   }
+}
+
+
+
+
+
+/* Header layout */
+.header {
+  background-color: #333; /* Dark background for the header */
+  color: #ffffff; /* Light text color for contrast */
+  padding: 1rem; /* Padding around the header */
+  display: flex; /* Use flexbox for flexible layout */
+  justify-content: space-between; /* Align items at the ends (logo at left, nav at right) */
+  align-items: center; /* Center vertically */
+}
+
+/* Logo styling */
+.header-logo img {
+  display: block; /* Make the logo image a block element */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Navigation menu styling */
+.nav-grid ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-grid li {
+  margin-left: 5rem; /* Add some space between navigation items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff; /* White text color for the links */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  white-space: nowrap;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background-color: #555; /* Darken link background on hover/focus for visual feedback */
 }
