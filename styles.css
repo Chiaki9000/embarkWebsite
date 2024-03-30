@@ -466,14 +466,53 @@ input:focus {
 }
 
 .overlay-content {
+  display: flex;
   position: relative;
   top: 10%;
   max-width: 60rem;
   margin: auto;
-  padding: 1.25rem;
+  padding-left: 3.5rem;
+  padding-top: 3.1rem;
+  padding-right: 3.5rem;
+  padding-bottom: 3.1rem;
   background: white;
   border-radius: 1.25rem;
 }
+
+.overlay-pfp-title{
+  display: flex;
+  font-family: "Open Sans";
+  font-style: normal;
+}
+
+.overlay-pfp-title img{
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.overlay-title{
+  padding-top: 0.4rem;
+  padding-left: 1rem;
+}
+.overlay-title h2{
+  position: relative;
+  top: 0.4rem;
+  color: #4D4D4D;
+  font-size: 1.06rem;
+  font-weight: 400;
+}
+
+.overlay-title h3{
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.overlay-text p{
+  max-width: 27.5rem;
+  padding-top: 1.71rem;
+}
+
 
 /* WCIT Overlay */
 #wcit-overlay {
@@ -503,26 +542,6 @@ input:focus {
   font-style: normal;
 }
 
-.overlay-content h2 {
-  color: #4D4D4D;
-  font-size: 1.0625rem;
-  font-weight: 400;
-  line-height: 150%;
-  /* letter-spacing: 1rem; */
-}
-
-.overlay-content h3 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 120%;
-  /* letter-spacing: -1rem; */
-}
-
-.overlay-content p {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: normal;
-}
 
 /* Footer */
 #footer {
