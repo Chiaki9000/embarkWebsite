@@ -50,7 +50,7 @@ input:focus {
 }
 
 .title {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 800;
@@ -192,7 +192,44 @@ input:focus {
 .menu-open .nav-menu {
   transform: translateX(0);
 } */
+/* Involved Image */
 
+.involved-image {
+  position: relative;
+  z-index: -1;
+}
+
+.involved-image img {
+  width: 100%;
+  height: 37.5rem;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: 0.6%;
+}
+
+.involved-header{
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-47%, -50%);
+  color: #000;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.involved-header img{
+  max-width: 4.9rem;
+  max-height: 4.9rem;
+}
+
+.involved-header h1{
+  font-size: 4.375rem;
+}
+
+.book-container{
+  display: flex;
+}
 
 /* Active Image */
 .active-image {
@@ -218,6 +255,23 @@ input:focus {
   z-index: -1;
 }
 
+/* Active Header */
+.active-header{
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-47%, -50%);
+}
+
+.active-image h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4.375rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Bike Container */
 .bike-container {
   display: flex;
@@ -238,48 +292,87 @@ input:focus {
   left: 1.875rem;
 }
 
-/* Active Header */
-.active-header{
-  position: absolute;
-  top: 50%;
-  left: 47%;
-  transform: translate(-47%, -50%);
-}
-
-.active-image h1 {
-  position: relative;
-  text-align: center;
-  color: white;
-  font-size: 4.375rem;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-}
-
 /* Italics */
 .italics {
   font-style: italic;
+  font-family: "Open Sans";
   font-weight: 600;
 }
 
 /* Active Grid */
 .active-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  gap: 3.75rem;
 }
 
 /* Club Info */
 .club-info {
-  max-width: 27.5625rem;
+  padding-top: 3.75rem;
+  max-width: 30.3rem;
+  max-height: 30rem;
+}
+
+.club-info button{
+  position: relative;
+  margin-top: 1.75rem;
+  background-image: url(Icons/OpenOverlay.png);
+  background-color: white;
+  /* put the height and width of your image here */
+  height: 45px;
+  width: 45px;
+  border: none;
+}
+
+.club-info p{
+  max-width: 441px;
+  font-weight: 400;
+  font-size: 1.135rem;
+  padding-top: 1.3rem;
+  padding-left: 5%;
+}
+
+.pfp-title{
+  display:flex;
+  font-family: "Open Sans";
+  color: #000;
+}
+
+.pfp-title img{
+  max-width: 4.6rem;
+  max-height: 4.6rem;
+}
+.club-titles{
+  padding-top: 0.3rem;
+  padding-left: 1.1rem;
+  padding-right: 3rem;
+}
+.club-titles h2{
+  color: #4D4D4D;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.club-titles h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 120%;
 }
 
 .club-image {
-  max-width: 100%;
- /* height: 500px; /* Set a specific height for all images */
- /* width: auto; /* Allow the width to adjust proportionally based on the height */
+  width: 469px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
   display: block; 
   margin: 0 auto; 
 }
-
 
 /* Overlay */
 .overlay {
@@ -291,6 +384,10 @@ input:focus {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+}
+
+.overlay-button span{
+  display:none;
 }
 
 .overlay-content {
