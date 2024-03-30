@@ -433,6 +433,22 @@ input:focus {
   margin: 0 auto; 
 }
 
+#backpack-title {
+  width: 325px;
+}
+
+#backpack-spacing{
+  padding-right: 0.75rem;
+}
+
+#hiking-spacing{
+  padding-right: 8.5rem;
+}
+
+#hike-text{
+  max-width: 26rem;
+}
+
 /* Overlay */
 .overlay {
   display: none;
