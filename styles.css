@@ -360,6 +360,8 @@ input:focus {
 
 /* Active Grid */
 .active-grid {
+  padding-left: 9%;
+  padding-right: 9%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-evenly;
@@ -511,8 +513,51 @@ input:focus {
 .overlay-text p{
   max-width: 27.5rem;
   padding-top: 1.71rem;
+  padding-right: 4.875rem;
+  padding-left: 2rem;
 }
 
+.buttons {
+  position: relative;
+  margin-top: 12.5%;
+  width: 16.25rem;
+  height: 11.875rem;
+  display: grid;
+  
+}
+
+.website{
+  background-color: #F3f3f3;
+  border-radius: 0.8rem;
+  height: 3.43rem;
+  display: flex;
+  padding-left: 1.9rem;
+  padding-top: 1.1rem;
+}
+
+.website img{
+  width: 1.31rem;
+  height: 1.31rem;
+}
+
+.website-btn{
+  position: relative;
+  bottom: 10%;
+  left: 28%;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#backbutton{
+  position: absolute;
+  top: 8%;
+  left: 95%;
+  transform: translate(-95%, -8%);
+}
 
 /* WCIT Overlay */
 #wcit-overlay {
@@ -544,6 +589,7 @@ input:focus {
 
 
 /* Footer */
+
 #footer {
   background-color: #007f63;
   color: white;
