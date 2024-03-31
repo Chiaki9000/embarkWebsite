@@ -447,6 +447,10 @@ input:focus {
   padding-right: 8.5rem;
 }
 
+#SPFIRG-spacing{
+  padding-right: 5rem;
+}
+
 #hike-text{
   max-width: 26rem;
 }
