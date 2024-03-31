@@ -598,22 +598,39 @@ input:focus {
   background-color: #007f63;
   color: white;
   padding: 1.25rem;
-  text-align: center;
+  padding-top: 6.875rem;
+}
+
+.foot-containter{
+  
+}
+
+#footer h1{
+  margin-bottom: 20px;
+}
+
+.text-container{
+  display: flex;  
+  max-width: 62.5rem;
 }
 
 .footer-content {
-  margin: 0.625rem 0;
   text-align: left;
-  width: 40%;
+  max-width: 35.635rem;
 }
-.footer-content2{
-  margin: 0.625rem 0;
-  text-align:right;
+.footer-content p{
+  
+  
 }
 
-.footer-content h1 {
-  margin-bottom: 20px; /* Add margin below the h1 */
+.footer-content2{
+  
 }
+
+.footer-content2 p{
+  text-align: right;
+}
+
 
 /* Header Logo */
 .header-logo {
