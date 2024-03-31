@@ -20,27 +20,20 @@ input:focus {
   opacity: 50%;
 }
 
-/* Menu Toggle */
-#menu-toggle {
+
+/* Text */
+#text {
   position: absolute;
-  left: -9999px;
+  top: 50%;
+  left: 50%;
+  color: #000;
+  font-family: "Open Sans";
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  line-height: normal;
+  font-style: normal;
 }
 
-/* Header */
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 6.25rem;
-  background: #D9D9D9;
-  border: none;
-} */
-
-/* Body */
-/* body {
-  overflow-x: hidden;
-} */
 
 /* Title Text */
 .title-text {
@@ -66,19 +59,19 @@ input:focus {
 /* Main Information */
 .main-information {
   position: relative;
-  padding-top: 2.8125rem;
+  padding-top: 2.8rem;
 }
 
 .title-text p {
   position: relative;
   font-family: "Open Sans";
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding-bottom: 0.75rem;
   max-width: 23.75rem;
-  left: 7.1875rem;
+  left: 7.2rem;
 }
 
 .main-tp {
@@ -122,11 +115,7 @@ input:focus {
   padding-bottom: 6.625rem;
 }
 
-/* Become Linked */
-.become-linked {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 /* Menu Icon */
 .menu-icon {
@@ -138,60 +127,9 @@ input:focus {
   font-size: 1.625rem;
 }
 
-/* Navigation Menu */
-/* .nav-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 15.625rem;
-  height: 100%;
-  background-color: #333;
-  padding-top: 1.25rem;
-  transition: transform 0.3s;
-  transform: translateX(100%);
-}
 
-.nav-menu ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-.nav-menu li {
-  padding: 0.625rem 1.25rem;
-}
 
-.nav-menu li a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-menu li a:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-menu {
-      width: 100%;
-  }
-}
-
-.menu-icon {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-  z-index: 999;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.menu-icon:hover {
-  color: #aaa;
-}
-
-.menu-open .nav-menu {
-  transform: translateX(0);
-} */
 /* Involved Image */
 .sus-image {
   position: relative;
@@ -578,22 +516,10 @@ input:focus {
   cursor: pointer;
 }
 
-/* Text */
-#text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #000;
-  font-family: "Open Sans";
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  line-height: normal;
-  font-style: normal;
-}
+
 
 
 /* Footer */
-
 #footer {
   background-color: #007f63;
   color: white;
@@ -632,18 +558,8 @@ input:focus {
 }
 
 
-/* Header Logo */
-.header-logo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.header-logo img {
-  max-width: 5%;
-  height: auto;
-}
+
 
 /* Main TP Image */
 .main-tp img {
@@ -656,7 +572,11 @@ input:focus {
   object-position: 95% 0;
 }
 
-
+/* Become Linked */
+.become-linked {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /* Menu Button */
 .become-linked a {
@@ -695,17 +615,17 @@ input:focus {
 }
 
 
+/* Header Logo */
+.header-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
-/* Header layout */
-.header {
-  background-color: #333; /* Dark background for the header */
-  color: #ffffff; /* Light text color for contrast */
-  padding: 1rem; /* Padding around the header */
-  display: flex; /* Use flexbox for flexible layout */
-  justify-content: space-between; /* Align items at the ends (logo at left, nav at right) */
-  align-items: center; /* Center vertically */
+.header-logo img {
+  max-width: 5%;
+  /* height: auto; */
 }
 
 /* Logo styling */
@@ -714,25 +634,162 @@ input:focus {
   margin: 0 auto; /* Center horizontally */
 }
 
+.header-logo {
+  flex-grow: 1; /* Allows the logo container to grow and take up space, helping in centering */
+  display: flex;
+  justify-content: center; /* Center the logo horizontally within the header */
+}
+
+/* Header layout */
+.header {
+  display: flex;
+  justify-content: space-between; /* Places children at opposite ends */
+  align-items: center;
+  background-color: #D9D9D9;
+  padding: 1rem 2rem;
+}
+
+.header a {
+  /* float: left; */
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.25rem; 
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  float: right;
+}
+
+
+
 /* Navigation menu styling */
 .nav-grid ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
+  justify-content: right;
 }
 
 .nav-grid li {
-  margin-left: 5rem; /* Add some space between navigation items */
+  margin-left: 5rem;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #ffffff; /* White text color for the links */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  color: #ffffff; 
+  transition: background-color 0.3s ease; 
   white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link:focus {
   background-color: #555; /* Darken link background on hover/focus for visual feedback */
+  color: #D9D9D9;
 }
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+@media screen and (max-width: 40rem) {
+  .header, .header-logo {
+    justify-content: center; /* Center content in smaller screens */
+    flex-direction: column; /* Stack logo and navigation vertically on smaller screens */
+  }
+
+  .nav-grid ul {
+    justify-content: center; /* Center navigation items on smaller screens */
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  .nav-grid li {
+    margin-left: 0; /* Remove margin between nav items on smaller screens */
+  }
+
+  .header a {
+    text-align: center; /* Ensure link text alignment is consistent */
+  }
+}
+
+
+
+
+
+/* Menu Toggle */
+/* #menu-toggle {
+  position: absolute;
+  left: -9999px;
+} */
+
+/* Header */
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6.25rem;
+  background: #D9D9D9;
+  border: none;
+} */
+
+/* Body */
+/* body {
+  overflow-x: hidden;
+} */
+
+/* Navigation Menu */
+/* .nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15.625rem;
+  height: 100%;
+  background-color: #333;
+  padding-top: 1.25rem;
+  transition: transform 0.3s;
+  transform: translateX(100%);
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  padding: 0.625rem 1.25rem;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+      width: 100%;
+  }
+}
+
+.menu-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 999;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.menu-icon:hover {
+  color: #aaa;
+}
+
+.menu-open .nav-menu {
+  transform: translateX(0);
+} */
