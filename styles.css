@@ -579,27 +579,46 @@ input:focus {
 }
 
 /* Menu Button */
-.become-linked a {
+.become-linked{
+  max-width: 83.563rem;
+}
+
+.become-linked div{
   display: inline-block;
-	color: black;
 	background-color:#F47d29;
 	font-size: 1.5rem;
 	padding: 0.5rem 0.75rem;
   margin: 0 0.5rem;
-	text-decoration: none;
 	transition-property: background-color;
 	transition-duration: 0.5s;
 	transition-timing-function: ease-out;
   border-radius: 0.5rem;
+  text-align: center;
+}
+
+.become-linked a{
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.become-linked div:hover,
+.become-linked div:focus {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .become-linked a:hover,
 .become-linked a:focus {
-  background-color: #0056b3;
   color: white;
   text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.become-linked hr{
+  stroke: #B3B3B3;
 }
 
 @media (max-width: 768px) {
