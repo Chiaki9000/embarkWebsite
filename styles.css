@@ -550,44 +550,123 @@ input:focus {
 
 
 /* Footer */
-#footer {
+.footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
   background-color: #007f63;
-  color: white;
-  padding: 1.25rem;
-  padding-top: 6.875rem;
+  color: #fff;
 }
 
-.foot-containter{
-  
+.footer hr{
+  max-width: 84%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #B3B3B3;
 }
 
-#footer h1{
-  margin-bottom: 20px;
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 110px;
+  padding-bottom: 130px;
 }
 
-.text-container{
-  display: flex;  
-  max-width: 62.5rem;
+.footer-row .footer-col h4 {
+  font-size: 1.68rem;
+  font-weight: 600;
 }
 
-.footer-content {
-  text-align: left;
-  max-width: 35.635rem;
-}
-.footer-content p{
-  
-  
+.footer-col p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 570px;
 }
 
-.footer-content2{
-  
-}
-
-.footer-content2 p{
+#address{
+  padding-top: 2.5rem;
   text-align: right;
 }
 
+#copyr{
+  padding-top: 33px;
+  padding-bottom: 86px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+@media (max-width: 67.5rem){
+  #address{
+    padding-top: 2.5rem;
+    text-align: left;
+  }
+
+  .footer .footer-row {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 110px;
+    padding-bottom: 130px;
+  }
+  
+  .footer .footer-row {
+    padding-left: 87px;
+
+    padding-top: 80px;
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding-left: 24px;
+
+    padding-top: 31px;
+    gap: 0.01rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  #address{
+    padding-top: 2.5rem;
+    text-align: left;
+  }
+
+  #copyr{
+    padding-top: 33px;
+    padding-bottom: 86px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+  }
+
+}
 
 
 
