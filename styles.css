@@ -21,21 +21,10 @@ input:focus {
 }
 
 
-/* Text */
-#text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #000;
-  font-family: "Open Sans";
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  line-height: normal;
-  font-style: normal;
-}
-
+/* Home First section */
 .home-grid {
   display: grid;
+  color: #000;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 0.5rem;
   grid-row-gap: 2rem;
@@ -43,13 +32,6 @@ input:focus {
   margin-bottom: 13.125rem;
 }
 
-/* Title Text */
-.home-text {
-  margin: 0 auto;
-  color: #000;
-}
-
-/* Main TP Image */
 .home-grid img {
   display: block;
   margin-left: auto;
@@ -57,6 +39,11 @@ input:focus {
   max-height: 35rem;
   object-fit: cover;
   object-position: 95% 0;
+}
+
+.home-text{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-text p {
@@ -85,6 +72,43 @@ input:focus {
   padding-left: 5rem;
 }
 
+@media(max-width: 1000px){
+
+  .home-text{
+    padding-left: 3rem;
+  }
+  .home-grid {
+    display: block;
+    margin-top: 4.3rem;
+    margin-bottom: 0rem;
+  }
+  
+  .home-text {
+    margin-bottom:5.5rem;
+  }
+
+  .home-text p {
+    max-width: 40rem;
+    margin-left: 5rem;
+    padding-right: 3rem;
+  }
+
+}
+
+@media(max-width:550px){
+  #This-is, #sustainability{
+    font-size: 2.3rem;
+  }
+  #sustainability{
+    padding-left: 0rem;
+  }
+
+  .home-text p {
+    margin-left: 0rem;
+    font-size: 1rem;
+  }
+}
+
 /* Call to Action */
 #call-to-action {
   background-color: #BCDFE7;
@@ -96,7 +120,7 @@ input:focus {
 
 /* Sub Title Text */
 .sub-title-text {
-  padding-left: 0.5813rem;
+  padding-left: 4%;
 }
 
 .sub-title-text h2 {
@@ -121,7 +145,25 @@ input:focus {
   padding-bottom: 6.625rem;
 }
 
+@media(max-width: 864px){
+  #call-to-action {
+    background-color: #BCDFE7;
+    padding-top: 1.625rem;
+  }
 
+  .sub-title-text h2 {
+    font-size: 2rem;
+    letter-spacing: -0.69px;
+    padding-right: 2rem;
+  }
+  
+  .sub-title-text p {
+    left: 0;
+    font-size: 1rem;
+    padding-right: 4rem;
+  }
+
+}
 
 /* Menu Icon */
 .menu-icon {
@@ -345,14 +387,9 @@ input:focus {
     margin-left: auto;
     margin-right:auto;
     max-width: 30rem;
-    position: relative;
-    margin-bottom: 11rem;
   }
 
   .club-info {
-    padding-top: 3.75rem;
-    max-width: 30.3rem;
-    max-height: 30rem;
     margin-bottom: 3.5rem;
   }
 }
