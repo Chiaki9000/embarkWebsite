@@ -617,106 +617,73 @@ input:focus {
 
 /* Header Logo */
 .header-logo {
-  width: 100%;
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  flex-grow: 1; /* Allow the logo to grow and fill available space */
+  text-align: left; /* Center the logo */
 }
 
 .header-logo img {
-  max-width: 5rem;
-  width: 10vw;
-  height: auto;
-  min-width: 5rem; 
+  max-width: 100%; /* Ensure the logo resizes with the container */
+  max-height: 5rem; /* Limit the maximum height */
+  width: auto; /* Allow the width to adjust proportionally */
+  height: auto; /* Allow the height to adjust proportionally */
 }
-
-@media screen and (max-width: 10rem) { 
-  .header, .header-logo {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .header-logo img {
-    width: 20vw;
-    min-width: 10rem;
-  }
-}
-
 
 /* Header layout */
 header {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #D9D9D9;
   padding: 1rem 2rem;
-  
+}
+
+/* Centering navigation items */
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 header a {
   color: black;
   text-align: center;
-  padding: 1rem;
+  padding: 1.25rem;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 2.0rem;
   border-radius: 0.25rem;
-  
   text-decoration: none;
-
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
   white-space: nowrap;
-  /* float: right; */
-  
 }
 
-header a:hover, header:focus {
+header a:hover,
+header a:focus {
   background-color: #555;
   color: #D9D9D9;
 }
 
-header a.active{
+header a.active {
   background-color: dodgerblue;
   color: white;
 }
-
-/* Navigation menu styling */
-/* .nav-grid ul {
-  
-  display: flex;
-}
-
-.nav-grid li {
-  margin-left: 5rem;
-}
-
-
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-} */
-
 
 @media screen and (max-width: 40rem) {
-  .header, .header-logo {
-    justify-content: center; /* Center content in smaller screens */
-    flex-direction: column; /* Stack logo and navigation vertically on smaller screens */
+  header {
+    flex-direction: column;
+    padding: 0.5rem;
   }
 
-  .nav-grid ul {
-    justify-content: center; /* Center navigation items on smaller screens */
-    flex-direction: column; /* Stack nav items vertically */
+  nav {
+    margin-top: 0.5rem;
   }
 
-  .nav-grid li {
-    margin-left: 0; /* Remove margin between nav items on smaller screens */
-  }
-
-  .header a {
-    text-align: center; /* Ensure link text alignment is consistent */
+  header a {
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
   }
 }
+
 
 
 
