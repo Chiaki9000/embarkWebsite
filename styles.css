@@ -359,12 +359,12 @@ input:focus {
   font-family: "Open Sans";
   font-weight: 600;
 }
+
+
 /* Active Grid */
 .active-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 20px;
-  justify-content: center;
   padding: 20px;
 }
 
@@ -376,18 +376,18 @@ input:focus {
   text-align: center;
 }
 
-/* Dynamic text sizing and button adjustments for smaller screens */
 .club-info button {
   background-image: url(Icons/OpenOverlay.png);
   background-color: white;
   border: none;
   cursor: pointer;
-  padding: 12px;
+  padding: 1.3rem;
   transition: transform 0.2s; /* Animation */
 }
 
 .club-info p, .club-titles h2, .club-titles h3 {
   margin: 10px 0;
+  word-wrap: break-word;
 }
 
 .pfp-title {
@@ -403,10 +403,6 @@ input:focus {
   height: auto;
 }
 
-.club-titles h2, .club-titles h3 {
-  word-wrap: break-word;
-}
-
 .club-image {
   width: 100%;
   max-width: 400px; /* Sets a max-width to ensure it doesn't become too large */
@@ -420,26 +416,27 @@ input:focus {
 }
 
 /* Media Queries for additional adjustments */
-@media (max-width: 768px) {
+@media (min-width: 50rem) { /* Adjust this breakpoint as needed */
   .active-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
   }
 
   .pfp-title {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row; /* Side by side on larger screens */
+    justify-content: start; /* Align items to the start of the container */
+    align-items: center; /* Center items vertically */
   }
-
+  
   .club-titles {
-    padding-left: 10px;
+    padding-left: 20px; /* Add some space between the image and the text */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .club-titles h2, .club-titles h3 {
-    font-size: smaller; /* Adjusts font size on very small screens */
+    font-size: smaller;
   }
-}
+} 
 
 /* @media (min-width: 30rem) {
   .club-info p {
