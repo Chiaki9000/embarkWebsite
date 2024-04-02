@@ -359,98 +359,95 @@ input:focus {
   font-family: "Open Sans";
   font-weight: 600;
 }
-
 /* Active Grid */
 .active-grid {
-  margin-left: auto;
-  margin-right:auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
-  gap: 3.75rem;
-  margin-bottom: 11rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 .club-info {
-  padding-top: 3.75rem;
-  max-width: 30.3rem;
-  max-height: 30rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-@media(max-width: 1050px){
-  .active-grid{
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    max-width: 30rem;
-  }
-
-  .club-info {
-    margin-bottom: 3.5rem;
-  }
-}
-
-/* Club Info */
-.club-info button{
-  position: relative;
-  margin-top: 1.75rem;
+/* Dynamic text sizing and button adjustments for smaller screens */
+.club-info button {
   background-image: url(Icons/OpenOverlay.png);
   background-color: white;
-  height: 45px;
-  width: 45px;
   border: none;
+  cursor: pointer;
+  padding: 12px;
+  transition: transform 0.2s; /* Animation */
 }
 
-.club-info p{
-  max-width: 441px;
-  font-weight: 400;
-  font-size: 1.135rem;
-  padding-top: 1.3rem;
-  padding-left: 1rem;
+.club-info p, .club-titles h2, .club-titles h3 {
+  margin: 10px 0;
 }
 
-.pfp-title{
-  display:flex;
-  font-family: "Open Sans";
-  color: #000;
+.pfp-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.pfp-title img{
-  max-width: 4.6rem;
-  max-height: 4.6rem;
-}
-.club-titles{
-  padding-top: 0.3rem;
-  padding-left: 1.1rem;
-  padding-right: 3rem;
-}
-.club-titles h2{
-  color: #4D4D4D;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 150%;
+.pfp-title img {
+  width: 100%; /* Makes image responsive */
+  max-width: 120px; /* Limits the size to maintain aspect ratio */
+  height: auto;
 }
 
-.club-titles h3{
-  font-size: 2.5rem;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 120%;
+.club-titles h2, .club-titles h3 {
+  word-wrap: break-word;
 }
 
 .club-image {
-  width: 469px;
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 400px; /* Sets a max-width to ensure it doesn't become too large */
+  height: auto; /* Maintains aspect ratio */
   border-radius: 10px;
-  display: block; 
-  margin: 0 auto; 
 }
 
-#backpack-title {
+/* Hover effect for button */
+.club-info button:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries for additional adjustments */
+@media (max-width: 768px) {
+  .active-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pfp-title {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .club-titles {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .club-titles h2, .club-titles h3 {
+    font-size: smaller; /* Adjusts font size on very small screens */
+  }
+}
+
+/* @media (min-width: 30rem) {
+  .club-info p {
+    grid-template-columns: min(40%, 30rem) 1fr;
+  }
+} */
+
+/* #backpack-title {
   width: 325px;
 }
 
@@ -468,7 +465,7 @@ input:focus {
 
 #hike-text{
   max-width: 26rem;
-}
+} */
 
 /* Overlay */
 .overlay {
