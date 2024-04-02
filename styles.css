@@ -372,8 +372,8 @@ input:focus {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  /* align-items: center;
+  text-align: center; */
 }
 
 .club-info button {
@@ -382,6 +382,7 @@ input:focus {
   border: none;
   cursor: pointer;
   padding: 1.3rem;
+  margin-left: 6rem;
   transition: transform 0.2s; /* Animation */
 }
 
@@ -400,14 +401,14 @@ input:focus {
 .pfp-title img {
   width: 100%; /* Makes image responsive */
   max-width: 120px; /* Limits the size to maintain aspect ratio */
+  min-width: 100px; /* Limits the size to maintain aspect ratio */
   height: auto;
 }
 
 .club-image {
   width: 100%;
-  max-width: 400px; /* Sets a max-width to ensure it doesn't become too large */
   height: auto; /* Maintains aspect ratio */
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 /* Hover effect for button */
@@ -415,8 +416,8 @@ input:focus {
   transform: scale(1.1);
 }
 
-/* Media Queries for additional adjustments */
-@media (min-width: 50rem) { /* Adjust this breakpoint as needed */
+
+@media (min-width: 60rem) { /* Adjust this breakpoint as needed */
   .active-grid {
     grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
   }
@@ -430,11 +431,23 @@ input:focus {
   .club-titles {
     padding-left: 20px; /* Add some space between the image and the text */
   }
+
 }
 
 @media (max-width: 30rem) {
-  .club-titles h2, .club-titles h3 {
-    font-size: smaller;
+  .club-titles h2{
+    font-size: 1rem;
+  }
+
+  .club-titles h3 {
+    font-size: 2rem;
+  }
+} 
+
+@media (max-width: 60rem) {
+
+  .club-info button{
+    margin-left: 0rem;
   }
 } 
 
