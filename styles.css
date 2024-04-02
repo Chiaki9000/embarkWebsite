@@ -72,7 +72,7 @@ input:focus {
   padding-left: 5rem;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 62.5rem){
 
   .home-text{
     padding-left: 3rem;
@@ -310,7 +310,6 @@ input:focus {
   width: 100%;
   max-height: 37.5rem;
   background-size: cover;
-  background-position: center;
   object-fit: cover;
   object-position: 0.6%;
 }
@@ -400,7 +399,6 @@ input:focus {
   margin-top: 1.75rem;
   background-image: url(Icons/OpenOverlay.png);
   background-color: white;
-  /* put the height and width of your image here */
   height: 45px;
   width: 45px;
   border: none;
@@ -411,7 +409,7 @@ input:focus {
   font-weight: 400;
   font-size: 1.135rem;
   padding-top: 1.3rem;
-  padding-left: 5%;
+  padding-left: 1rem;
 }
 
 .pfp-title{
@@ -687,14 +685,13 @@ input:focus {
     left: 0;
     transform: none;
     width: 100%;
-    border-radius: 0;
   }
 
   .footer .footer-row {
     padding-left: 24px;
 
     padding-top: 31px;
-    gap: 0.01rem;
+    gap: none;
   }
 
   .footer-col form {
