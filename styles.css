@@ -353,6 +353,54 @@ input:focus {
   display: block;
 }
 
+@media (max-width: 590px){
+  .active-header{
+    left: 45%;
+    transform: translate(-45%, -50%);
+  }
+
+  #lifestyle, #active{
+    font-size: 3rem;
+  }
+
+  #lifestyle{
+    left: 4rem;
+  }
+
+  .active-header img{
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 440px){
+  .active-header{
+    left: 30%;
+    transform: translate(-30%, -50%);
+  }
+}
+
+@media (max-width: 360px){
+  .active-header{
+    left: 40%;
+    transform: translate(-40%, -50%);
+  }
+
+  #lifestyle, #active{
+    font-size: 2rem;
+  }
+
+  #lifestyle{
+    left: 3rem;
+  }
+
+  .active-header img{
+    right: 1rem;
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
 /* Italics */
 .italics {
   font-style: italic;
@@ -364,12 +412,16 @@ input:focus {
 /* Active Grid */
 .active-grid {
   display: grid;
+  margin-right: 3rem;
+  margin-left: 3rem;
   gap: 20px;
   padding: 20px;
 }
 
 .club-info {
   padding: 20px;
+  margin-right: 2rem;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
   /* align-items: center;
@@ -382,7 +434,8 @@ input:focus {
   border: none;
   cursor: pointer;
   padding: 1.3rem;
-  margin-left: 6rem;
+  margin-left: auto;
+  margin-right: 1rem;
   transition: transform 0.2s; /* Animation */
 }
 
@@ -390,6 +443,12 @@ input:focus {
   margin: 10px 0;
   word-wrap: break-word;
 }
+
+.club-info p{
+  padding-left:2rem;
+  width: 80%;
+}
+
 
 .pfp-title {
   display: flex;
@@ -400,14 +459,15 @@ input:focus {
 
 .pfp-title img {
   width: 100%; /* Makes image responsive */
-  max-width: 120px; /* Limits the size to maintain aspect ratio */
-  min-width: 100px; /* Limits the size to maintain aspect ratio */
+  max-width: 75px; /* Limits the size to maintain aspect ratio */
+  min-width: 75px; /* Limits the size to maintain aspect ratio */
   height: auto;
 }
 
 .club-image {
   width: 100%;
   height: auto; /* Maintains aspect ratio */
+  
   border-radius: 1rem;
 }
 
@@ -416,8 +476,18 @@ input:focus {
   transform: scale(1.1);
 }
 
+.club-titles h2{
+  position: relative;
+  top: 0.7rem;
+  color:#4D4D4D;
+  font-size: 1rem;
+}
 
-@media (min-width: 60rem) { /* Adjust this breakpoint as needed */
+.club-titles h3 {  
+  font-size: 2rem;
+}
+
+@media (min-width: 70rem) { /* Adjust this breakpoint as needed */
   .active-grid {
     grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
   }
@@ -434,18 +504,7 @@ input:focus {
 
 }
 
-@media (max-width: 30rem) {
-  .club-titles h2{
-    font-size: 1rem;
-  }
-
-  .club-titles h3 {
-    font-size: 2rem;
-  }
-} 
-
-@media (max-width: 60rem) {
-
+@media (max-width: 70rem) {
   .club-info button{
     margin-left: 0rem;
   }
