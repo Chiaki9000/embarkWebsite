@@ -124,12 +124,12 @@ input:focus {
   color: black;
   padding-top: 6.75rem;
   padding-bottom: 10.1rem;
-  padding-left: 7.3%;
+  padding-left: 3.3%;
 }
 
 /* Sub Title Text */
 .sub-title-text {
-  padding-left: 4%;
+  padding-left: 8%;
 }
 
 .sub-title-text h2 {
@@ -158,6 +158,7 @@ input:focus {
   #call-to-action {
     background-color: #BCDFE7;
     padding-top: 1.625rem;
+    padding-left:0%;
   }
 
   .sub-title-text h2 {
@@ -219,7 +220,7 @@ input:focus {
   right: 1rem;
   top: 1rem;
   max-width: 4.2rem;
-  max-height: 4.2rem;
+  max-height: auto;
   grid-column: 2;
   grid-row: 1;
 }
@@ -241,6 +242,84 @@ input:focus {
 #earth, #future{
   font-size: 4.375rem;
   display:block;
+}
+
+@media(max-width: 975px){
+  .sus-header img{
+    right: 0.8rem;
+    top: 0.8rem;
+    max-width: 2.8rem;
+  }
+
+  
+  #future{
+    bottom: 1rem;
+    left: 6.8rem;
+  }
+  
+  #earth, #future{
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 665px){
+  .sus-header img{
+    right: 0.5rem;
+    top: 0.4rem;
+    max-width: 2rem;
+  }
+
+  
+  #future{
+    bottom: 0.6rem;
+    left: 4.7rem;
+  }
+  
+  #earth, #future{
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 460px){
+  .sus-header{
+    left: 40%;
+    transform: translate(-40%, -50%);
+  
+  }
+
+  .sus-header img{
+    right: 0.5rem;
+    top: 0.3rem;
+    max-width: 1.5rem;
+  }
+
+  
+  #future{
+    bottom: 0.3rem;
+    left: 3.6rem;
+  }
+  
+  #earth, #future{
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 336px){
+  .sus-header img{
+    right: 0.4rem;
+    top: 0.2rem;
+    max-width: 1.5rem;
+  }
+
+  
+  #future{
+    bottom: 0.2rem;
+    left: 3rem;
+  }
+  
+  #earth, #future{
+    font-size: 1.3rem;
+  }
 }
 
 /* Involved Image */
@@ -269,7 +348,6 @@ input:focus {
   top: 50%;
   left: 46%;
   transform: translate(-46%, -50%);
-
   display: grid;
   grid-auto-columns: 1rem, 1rem;
 }
@@ -277,7 +355,7 @@ input:focus {
 .inv-header img{
   position: relative;
   max-width: 4.9rem;
-  max-height: 4.9rem;
+  max-height: auto;
   left: 1.3rem;
   margin-top: 0.9rem;
 
@@ -287,7 +365,7 @@ input:focus {
 
 #enact{
   position: relative;
-  
+  width:100%;
   grid-column: 1;
   grid-row: 1;
 }
@@ -304,6 +382,74 @@ input:focus {
   display: block;
   font-size: 4.375rem;
 }
+
+@media(max-width: 1050px){
+  .inv-header img{
+    max-width: 3.7rem;
+    left: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  #together{
+    bottom: 0.6rem;
+    left: 4rem;
+  }
+  
+  #enact, #together{
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 790px){
+  .inv-header img{
+    max-width: 3rem;
+    left: 0.6rem;
+    margin-top: 0.rem;
+  }
+  
+  #together{
+    bottom: 0.3rem;
+    left: 3.2rem;
+  }
+  
+  #enact, #together{
+    font-size: 2.4rem;
+  }
+}
+
+@media(max-width: 590px){
+  .inv-header img{
+    max-width: 2.3rem;
+    left: 0.3rem;
+    margin-top: 0.3rem;
+  }
+  
+  #together{
+    bottom: 0rem;
+    left: 2.6rem;
+  }
+  
+  #enact, #together{
+    font-size: 1.8rem;
+  }
+}
+
+@media(max-width: 435px){
+  .inv-header img{
+    max-width: 1.6rem;
+    left: 0.3rem;
+    margin-top: 0.2rem;
+  }
+  
+  #together{
+    left: 1.8rem;
+  }
+  
+  #enact, #together{
+    font-size: 1.3rem;
+  }
+}
+
 
 /* Active Image */
 .active-image {
