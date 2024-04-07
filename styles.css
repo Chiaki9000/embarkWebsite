@@ -808,6 +808,79 @@ input:focus {
   transform: translate(-95%, -8%);
 }
 
+@media (max-width: 768px) {
+  .overlay-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    max-width: 90%; /* Increase max-width percentage for smaller screens */
+  }
+
+  .overlay-pfp-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay-pfp-title img {
+    max-width: 4rem; /* Adjust the image size */
+    max-height: 4rem;
+  }
+
+  .overlay-title h2, .overlay-title h3 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    text-align: center;
+  }
+
+  .overlay-text p {
+    max-width: 100%; /* Allow text to fill the container */
+    padding: 1rem 0.5rem; /* Adjust padding */
+    text-align: justify;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr; /* Stack buttons vertically */
+    gap: 0.5rem; /* Add some space between buttons */
+    width: 100%; /* Let the buttons container fill its parent */
+    margin-top: 1rem; /* Adjust margin top */
+  }
+
+  .website {
+    justify-content: center; /* Center the content inside each button */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .website img {
+    width: 1rem; /* Adjust icon size */
+    height: 1rem;
+    margin-right: 0.5rem; /* Add space between icon and text */
+  }
+
+  .website-btn {
+    bottom: auto;
+    left: auto;
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  #backbutton {
+    top: 5%;
+    left: auto;
+    right: 5%; /* Position the back button to the top-right corner */
+    transform: translate(0%, -50%);
+  }
+}
+
+/* You might need more breakpoints for larger/smaller screens */
+@media (max-width: 480px) {
+  .overlay-title h2, .overlay-title h3 {
+    font-size: 1.2rem; /* Even smaller font size for very small screens */
+  }
+
+  .overlay-pfp-title img {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+  }
+}
+
 /* WCIT Overlay */
 #wcit-overlay {
   position: fixed;
