@@ -817,7 +817,7 @@ input:focus {
   text-decoration: none;
 }
 
-#backbutton{
+.backbutton{
   position: absolute;
   top: 2rem;
   left: 95%;
@@ -905,7 +905,7 @@ input:focus {
     font-size: 1rem; /* Adjust font size */
   }
 
-  #backbutton {
+  .backbutton {
     padding-top: 2rem;
     left: auto;
     right: 5%; /* Position the back button to the top-right corner */
