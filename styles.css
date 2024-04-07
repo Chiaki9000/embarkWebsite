@@ -642,11 +642,18 @@ input:focus {
 
 .club-titles h3 {  
   font-size: 2rem;
+  
 }
 
 .club-titles {
   padding-left: 20px; /* Add some space between the image and the text */
 }
+
+#SPFIRG-spacing h3{
+  max-width: 90%;
+}
+
+
 
 @media (min-width: 70rem) { /* Adjust this breakpoint as needed */
   .active-grid {
@@ -710,6 +717,9 @@ input:focus {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .overlay-button span{
@@ -757,6 +767,8 @@ input:focus {
   color: #000;
   font-size: 2.5rem;
   font-weight: 400;
+  max-width: 22rem;
+  line-height: 120%;
 }
 
 .overlay-text p{
@@ -803,12 +815,22 @@ input:focus {
 
 #backbutton{
   position: absolute;
-  top: 8%;
+  top: 2rem;
   left: 95%;
-  transform: translate(-95%, -8%);
+  transform: translate(-95%, 0%);
 }
 
-@media (max-width: 768px) {
+#clean-tech{
+  max-width: 60%;
+}
+
+
+@media (max-width: 900px) {
+  .overlay {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .overlay-content {
     flex-direction: column;
     align-items: center;
@@ -817,8 +839,9 @@ input:focus {
   }
 
   .overlay-pfp-title {
-    flex-direction: column;
-    align-items: center;
+    display:flex;
+    position: relative;
+    left:5%;
   }
 
   .overlay-pfp-title img {
@@ -826,15 +849,27 @@ input:focus {
     max-height: 4rem;
   }
 
-  .overlay-title h2, .overlay-title h3 {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    text-align: center;
+  .overlay-title{
+    position:relative;
+    bottom: 0.6rem;
+  }
+  .overlay-title h2{
+    font-size: 1.2rem; 
+  }
+
+  .overlay-title h3 {
+    padding-top: 0.3rem;
+    padding-right:4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
   }
 
   .overlay-text p {
-    max-width: 100%; /* Allow text to fill the container */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
     padding: 1rem 0.5rem; /* Adjust padding */
-    text-align: justify;
+    text-align: left;
   }
 
   .buttons {
@@ -845,6 +880,9 @@ input:focus {
   }
 
   .website {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     justify-content: center; /* Center the content inside each button */
     padding: 1rem; /* Adjust padding */
   }
@@ -852,6 +890,7 @@ input:focus {
   .website img {
     width: 1rem; /* Adjust icon size */
     height: 1rem;
+    margin-top: 0.2rem;
     margin-right: 0.5rem; /* Add space between icon and text */
   }
 
@@ -862,17 +901,36 @@ input:focus {
   }
 
   #backbutton {
-    top: 5%;
+    padding-top: 2rem;
     left: auto;
     right: 5%; /* Position the back button to the top-right corner */
     transform: translate(0%, -50%);
   }
+
+  #clean-tech{
+    max-width: 100%;
+  }
 }
 
 /* You might need more breakpoints for larger/smaller screens */
-@media (max-width: 480px) {
+@media (max-width: 540px) {
+  .overlay {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .overlay-title h2, .overlay-title h3 {
     font-size: 1.2rem; /* Even smaller font size for very small screens */
+  }
+
+  .overlay-title h2{
+    font-size: 1.2rem; 
+    padding-right: 4.3rem;
+  }
+
+  .overlay-title h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-right: 1rem;
   }
 
   .overlay-pfp-title img {
@@ -880,6 +938,13 @@ input:focus {
     max-height: 3.5rem;
   }
 }
+
+@media (max-width: 330px) {
+  .overlay-title h3 {
+    font-size: 1.2rem;
+  }
+}
+
 
 /* WCIT Overlay */
 #wcit-overlay {
