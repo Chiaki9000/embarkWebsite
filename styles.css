@@ -475,7 +475,7 @@ input:focus {
   }
 }
 
-@media(max-width: 435px){
+@media(max-width: 27.188rem){
   .inv-header img{
     max-width: 1.6rem;
     left: 0.3rem;
@@ -491,7 +491,7 @@ input:focus {
   }
 }
 
-@media(max-width: 320px){
+@media(max-width: 20rem){
   #enact, #together{
     font-size: 1.2rem;
   }
