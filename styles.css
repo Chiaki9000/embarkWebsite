@@ -615,8 +615,8 @@ input:focus {
   align-items: center;
   width: 100%;
 
-  flex-direction: row; /* Side by side on larger screens */
-  justify-content: start; /* Align items to the start of the container */
+  flex-direction: row;
+  justify-content: start; 
 
 }
 
@@ -628,7 +628,7 @@ input:focus {
 
 .club-image {
   width: 100%;
-  height: auto; /* Maintains aspect ratio */
+  height: auto;
   
   border-radius: 1rem;
 }
@@ -650,7 +650,7 @@ input:focus {
 }
 
 .club-titles {
-  padding-left: 20px; /* Add some space between the image and the text */
+  padding-left: 20px;
 }
 
 #SPFIRG-spacing h3{
@@ -659,9 +659,9 @@ input:focus {
 
 
 
-@media (min-width: 70rem) { /* Adjust this breakpoint as needed */
+@media (min-width: 70rem) { 
   .active-grid {
-    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+    grid-template-columns: 1fr 1fr;
   }
   
 }
@@ -878,37 +878,37 @@ input:focus {
   }
 
   .buttons {
-    grid-template-columns: 1fr; /* Stack buttons vertically */
-    gap: 0.5rem; /* Add some space between buttons */
-    width: 100%; /* Let the buttons container fill its parent */
-    margin-top: 1rem; /* Adjust margin top */
+    grid-template-columns: 1fr; 
+    gap: 0.5rem; 
+    width: 100%; 
+    margin-top: 1rem;
   }
 
   .website {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    justify-content: center; /* Center the content inside each button */
-    padding: 1rem; /* Adjust padding */
+    justify-content: center; 
+    padding: 1rem;
   }
 
   .website img {
-    width: 1rem; /* Adjust icon size */
+    width: 1rem;
     height: 1rem;
     margin-top: 0.2rem;
-    margin-right: 0.5rem; /* Add space between icon and text */
+    margin-right: 0.5rem;
   }
 
   .website-btn {
     bottom: auto;
     left: auto;
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
   }
 
   #backbutton {
     padding-top: 2rem;
     left: auto;
-    right: 5%; /* Position the back button to the top-right corner */
+    right: 5%; 
     transform: translate(0%, -50%);
   }
 
@@ -923,7 +923,7 @@ input:focus {
     padding-right: 1rem;
   }
   .overlay-title h2, .overlay-title h3 {
-    font-size: 1.2rem; /* Even smaller font size for very small screens */
+    font-size: 1.2rem; 
   }
 
   .overlay-title h2{
@@ -1142,10 +1142,9 @@ input:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Adding margin to the heading and paragraph */
 .become-linked h3,
 .become-linked p {
-  margin: 0.5rem 0; /* Adjust the vertical margin as needed */
+  margin: 0.5rem 0;
 }
 
 .button-link h3{
@@ -1159,28 +1158,25 @@ input:focus {
   max-width: 75%;
 }
 
-/* Adjustments to the horizontal line for spacing */
 .become-linked hr {
   width: 33%;
-  margin: 1.2rem auto 1.4rem; /* Adjust top and bottom margins for spacing */
+  margin: 1.2rem auto 1.4rem; 
   border: 0;
   height: 1px;
-  background-color: #000; /* Or use 'background-image' for gradients */
+  background-color: #000; 
 }
 
 @media (max-width: 64rem) {
   .become-linked {
-    grid-template-columns: 1fr; /* Single column for smaller screens */
-    padding: 0 1.5rem; /* Adjust padding for smaller screens */
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem; 
     
   }
 
-  
-  /* Ensure content within button links is centered on small screens */
   .become-linked .button-link {
-    width: 100%; /* Full width of the container */
-    max-width: 20.25rem; /* Max width for better appearance */
-    margin: 0 auto 1.5rem; /* Center the buttons horizontally and add margin bottom */
+    width: 100%; 
+    max-width: 20.25rem;
+    margin: 0 auto 1.5rem;
   }
 }
 
@@ -1196,6 +1192,8 @@ input:focus {
   width: auto;
 }
 
+
+
 /* Header layout */
 header {
   display: flex;
@@ -1204,6 +1202,8 @@ header {
   background-color: #D9D9D9;
   padding: 1rem 2rem;
 }
+
+
 
 /* Centering navigation items */
 nav {
