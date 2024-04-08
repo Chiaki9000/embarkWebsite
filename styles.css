@@ -975,7 +975,7 @@ input:focus {
 
   .overlay-text p {
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -985,7 +985,8 @@ input:focus {
   }
 
   .overlay-text p {
-    font-size: 0.7rem;
+    padding: 0.1rem;
+    font-size: 0.75rem;
   }
 }
 
