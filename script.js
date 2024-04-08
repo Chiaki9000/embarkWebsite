@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    document.querySelectorAll('.backbutton').forEach(button => {
+        button.addEventListener('click', function () {
+            var overlay = this.closest('.overlay');
+            overlay.style.display = 'none';
+        });
+    });
+
     document.addEventListener('keydown', function (e) {
         if (document.activeElement.classList.contains('backbutton') && e.key === 'Enter') {
             document.activeElement.closest('.overlay').style.display = 'none';
