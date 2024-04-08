@@ -1,6 +1,4 @@
-// Wait for the DOM to fully load
 document.addEventListener('DOMContentLoaded', function () {
-    // Add event listener for each "More Info" button
     document.querySelectorAll('.overlay-button').forEach(button => {
         button.addEventListener('click', function () {
             var overlayId = this.id.replace('-overlay-btn', '-overlay');
@@ -9,10 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Add event listener for clicking on an overlay to hide it
     document.querySelectorAll('.overlay').forEach(overlay => {
-        overlay.addEventListener('click', function () {
-            this.style.display = 'none';
+        overlay.addEventListener('click', function (e) {
+            if (!e.target.closest('.overlay-content')) {
+                this.style.display = 'none';
+            }
         });
+    });
+
+    document.querySelectorAll('.backbutton').forEach(button => {
+        button.addEventListener('click', function () {
+            var overlay = this.closest('.overlay');
+            overlay.style.display = 'none';
+        });
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (document.activeElement.classList.contains('backbutton') && e.key === 'Enter') {
+            document.activeElement.closest('.overlay').style.display = 'none';
+        }
     });
 });
