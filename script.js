@@ -8,8 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.querySelectorAll('.overlay').forEach(overlay => {
-        overlay.addEventListener('click', function () {
+        overlay.addEventListener('click', function (e) {
+            if (!e.target.classList.contains('backbutton')) {
+                return;
+            }
             this.style.display = 'none';
         });
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (document.activeElement.classList.contains('backbutton') && e.key === 'Enter') {
+            document.activeElement.closest('.overlay').style.display = 'none';
+        }
     });
 });
