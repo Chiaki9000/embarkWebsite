@@ -44,7 +44,7 @@ input:focus {
   object-position: 95% 0;
 }
 
-.home-text{
+.home-text {
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,7 +62,8 @@ input:focus {
   top: 2rem;
 }
 
-#This-is, #sustainability{
+#This-is,
+#sustainability {
   display: block;
   font-family: "Montserrat";
   font-size: 3.125rem;
@@ -71,23 +72,24 @@ input:focus {
   line-height: 115%;
 }
 
-#sustainability{
+#sustainability {
   padding-left: 5rem;
 }
 
-@media(max-width: 62.5rem){
+@media(max-width: 62.5rem) {
 
-  .home-text{
+  .home-text {
     padding-left: 3rem;
   }
+
   .home-grid {
     display: block;
     margin-top: 4.3rem;
     margin-bottom: 0rem;
   }
-  
+
   .home-text {
-    margin-bottom:5.5rem;
+    margin-bottom: 5.5rem;
   }
 
   .home-text p {
@@ -98,11 +100,14 @@ input:focus {
 
 }
 
-@media(max-width:34.3rem){
-  #This-is, #sustainability{
+@media(max-width:34.3rem) {
+
+  #This-is,
+  #sustainability {
     font-size: 2.3rem;
   }
-  #sustainability{
+
+  #sustainability {
     padding-left: 0rem;
   }
 
@@ -112,10 +117,13 @@ input:focus {
   }
 }
 
-@media(max-width:22.5rem){
-  #This-is, #sustainability{
+@media(max-width:22.5rem) {
+
+  #This-is,
+  #sustainability {
     font-size: 1.75rem;
   }
+
   .home-text p {
     font-size: 0.9rem;
   }
@@ -160,17 +168,17 @@ input:focus {
   padding-bottom: 6.625rem;
 }
 
-@media(max-width: 54rem){
+@media(max-width: 54rem) {
   #call-to-action {
     padding-top: 1.625rem;
-    padding-left:0%;
+    padding-left: 0%;
   }
 
   .sub-title-text h2 {
     font-size: 2rem;
     padding-right: 2rem;
   }
-  
+
   .sub-title-text p {
     left: 0;
     font-size: 1rem;
@@ -210,17 +218,17 @@ input:focus {
   object-position: 0.6%;
 }
 
-.sus-header{
+.sus-header {
   position: absolute;
   top: 50%;
   left: 45%;
   transform: translate(-45%, -50%);
 
   display: grid;
-  grid-template-columns: 1rem,1rem;
+  grid-template-columns: 1rem, 1rem;
 }
 
-.sus-header img{
+.sus-header img {
   position: relative;
   right: 1rem;
   top: 1rem;
@@ -230,13 +238,13 @@ input:focus {
   grid-row: 1;
 }
 
-#earth{
+#earth {
   position: relative;
   grid-column: 1;
   grid-row: 1;
 }
 
-#future{
+#future {
   position: relative;
   bottom: 1.4rem;
   left: 10rem;
@@ -244,85 +252,90 @@ input:focus {
   grid-row: 2;
 }
 
-#earth, #future{
+#earth,
+#future {
   font-size: 4.375rem;
-  display:block;
+  display: block;
 }
 
-@media(max-width: 61rem){
-  .sus-header img{
+@media(max-width: 61rem) {
+  .sus-header img {
     right: 0.8rem;
     top: 0.8rem;
     max-width: 2.8rem;
   }
 
-  
-  #future{
+
+  #future {
     bottom: 1rem;
     left: 6.8rem;
   }
-  
-  #earth, #future{
+
+  #earth,
+  #future {
     font-size: 3rem;
   }
 }
 
-@media(max-width: 41.56rem){
-  .sus-header img{
+@media(max-width: 41.56rem) {
+  .sus-header img {
     right: 0.5rem;
     top: 0.4rem;
     max-width: 2rem;
   }
 
-  
-  #future{
+
+  #future {
     bottom: 0.6rem;
     left: 4.7rem;
   }
-  
-  #earth, #future{
+
+  #earth,
+  #future {
     font-size: 2rem;
   }
 }
 
-@media(max-width: 28.75rem){
-  .sus-header{
+@media(max-width: 28.75rem) {
+  .sus-header {
     left: 40%;
     transform: translate(-40%, -50%);
-  
+
   }
 
-  .sus-header img{
+  .sus-header img {
     right: 0.5rem;
     top: 0.3rem;
     max-width: 1.5rem;
   }
 
-  
-  #future{
+
+  #future {
     bottom: 0.3rem;
     left: 3.6rem;
   }
-  
-  #earth, #future{
+
+  #earth,
+  #future {
     font-size: 1.5rem;
   }
 }
 
-@media(max-width: 21rem){
-  .sus-header img{
+@media(max-width: 21rem) {
+  .sus-header img {
     right: 0.4rem;
     top: 0.2rem;
     max-width: 1.5rem;
   }
 
-  
-  #future{
+
+  #future {
     bottom: 0.2rem;
     left: 3rem;
   }
-  
-  #earth, #future{
+
+  #earth,
+  #future {
     font-size: 1.3rem;
   }
 }
@@ -348,7 +361,7 @@ input:focus {
   object-position: 0.6%;
 }
 
-.inv-header{
+.inv-header {
   position: absolute;
   top: 50%;
   left: 46%;
@@ -357,7 +370,7 @@ input:focus {
   grid-auto-columns: 1rem, 1rem;
 }
 
-.inv-header img{
+.inv-header img {
   position: relative;
   max-width: 4.9rem;
   max-height: auto;
@@ -368,14 +381,14 @@ input:focus {
   grid-row: 1;
 }
 
-#enact{
+#enact {
   position: relative;
-  width:100%;
+  width: 100%;
   grid-column: 1;
   grid-row: 1;
 }
 
-#together{
+#together {
   position: relative;
   bottom: 1rem;
   left: 5.8rem;
@@ -383,74 +396,79 @@ input:focus {
   grid-row: 2;
 }
 
-#enact, #together{
+#enact,
+#together {
   display: block;
   font-size: 4.375rem;
 }
 
-@media(max-width: 65.6rem){
-  .inv-header img{
+@media(max-width: 65.6rem) {
+  .inv-header img {
     max-width: 3.7rem;
     left: 0.8rem;
     margin-top: 0.5rem;
   }
-  
-  #together{
+
+  #together {
     bottom: 0.6rem;
     left: 4rem;
   }
-  
-  #enact, #together{
+
+  #enact,
+  #together {
     font-size: 3rem;
   }
 }
 
-@media(max-width: 49.375rem){
-  .inv-header img{
+@media(max-width: 49.375rem) {
+  .inv-header img {
     max-width: 3rem;
     left: 0.6rem;
     margin-top: 0.rem;
   }
-  
-  #together{
+
+  #together {
     bottom: 0.3rem;
     left: 3.2rem;
   }
-  
-  #enact, #together{
+
+  #enact,
+  #together {
     font-size: 2.4rem;
   }
 }
 
-@media(max-width: 36.875rem){
-  .inv-header img{
+@media(max-width: 36.875rem) {
+  .inv-header img {
     max-width: 2.3rem;
     left: 0.3rem;
     margin-top: 0.3rem;
   }
-  
-  #together{
+
+  #together {
     bottom: 0rem;
     left: 2.6rem;
   }
-  
-  #enact, #together{
+
+  #enact,
+  #together {
     font-size: 1.8rem;
   }
 }
 
-@media(max-width: 27.18rem){
-  .inv-header img{
+@media(max-width: 27.18rem) {
+  .inv-header img {
     max-width: 1.6rem;
     left: 0.3rem;
     margin-top: 0.2rem;
   }
-  
-  #together{
+
+  #together {
     left: 1.8rem;
   }
-  
-  #enact, #together{
+
+  #enact,
+  #together {
     font-size: 1.3rem;
   }
 }
@@ -475,16 +493,16 @@ input:focus {
 }
 
 /* Active Header */
-.active-header{
+.active-header {
   position: absolute;
   top: 50%;
   left: 47%;
   transform: translate(-47%, -50%);
   display: grid;
-  grid-template-columns: 1rem,1rem;
+  grid-template-columns: 1rem, 1rem;
 }
 
-.active-header img{
+.active-header img {
   position: relative;
   right: 2.8rem;
   width: 5.688rem;
@@ -494,73 +512,77 @@ input:focus {
   grid-row: 1;
 }
 
-#lifestyle{
+#lifestyle {
   position: relative;
   left: 5.4rem;
   bottom: 0.5rem;
-  
+
   grid-column: 1/2;
   grid-row: 2;
 }
 
-#active{
+#active {
   grid-column: 1;
   grid-row: 1;
 }
 
-#lifestyle, #active{
+#lifestyle,
+#active {
   font-size: 4.375rem;
   display: block;
 }
 
-@media (max-width: 36.875rem){
-  .active-header{
+@media (max-width: 36.875rem) {
+  .active-header {
     left: 45%;
     transform: translate(-45%, -50%);
   }
 
-  #lifestyle, #active{
+  #lifestyle,
+  #active {
     font-size: 3rem;
   }
 
-  #lifestyle{
+  #lifestyle {
     left: 4rem;
   }
 
-  .active-header img{
+  .active-header img {
     right: 2rem;
     width: 4rem;
     height: 4rem;
   }
 }
 
-@media (max-width: 27.5rem){
-  .active-header{
+@media (max-width: 27.5rem) {
+  .active-header {
     left: 30%;
     transform: translate(-30%, -50%);
   }
 }
 
-@media (max-width: 22.5rem){
-  .active-header{
+@media (max-width: 22.5rem) {
+  .active-header {
     left: 40%;
     transform: translate(-40%, -50%);
   }
 
-  #lifestyle, #active{
+  #lifestyle,
+  #active {
     font-size: 2rem;
   }
 
-  #lifestyle{
+  #lifestyle {
     left: 3rem;
   }
 
-  .active-header img{
+  .active-header img {
     right: 1rem;
     width: 2.6rem;
     height: 2.6rem;
   }
 }
+
 /* Italics */
 .italics {
   font-style: italic;
@@ -594,17 +616,19 @@ input:focus {
   padding: 1.3rem;
   margin-left: auto;
   margin-right: 1rem;
-  transition: transform 0.2s; 
+  transition: transform 0.2s;
 }
 
 
-.club-info p, .club-titles h2, .club-titles h3 {
+.club-info p,
+.club-titles h2,
+.club-titles h3 {
   margin: 10px 0;
   word-wrap: break-word;
 }
 
-.club-info p{
-  padding-left:2rem;
+.club-info p {
+  padding-left: 2rem;
   width: 80%;
 }
 
@@ -616,20 +640,20 @@ input:focus {
   width: 100%;
 
   flex-direction: row;
-  justify-content: start; 
+  justify-content: start;
 
 }
 
 .pfp-title img {
-  width: 100%; 
-  max-width: 75px; 
+  width: 100%;
+  max-width: 75px;
   height: auto;
 }
 
 .club-image {
   width: 100%;
   height: auto;
-  
+
   border-radius: 1rem;
 }
 
@@ -637,76 +661,76 @@ input:focus {
   transform: scale(1.1);
 }
 
-.club-titles h2{
+.club-titles h2 {
   position: relative;
   top: 0.7rem;
-  color:#4D4D4D;
+  color: #4D4D4D;
   font-size: 1rem;
 }
 
-.club-titles h3 {  
+.club-titles h3 {
   font-size: 2rem;
-  
+
 }
 
 .club-titles {
   padding-left: 20px;
 }
 
-#SPFIRG-spacing h3{
+#SPFIRG-spacing h3 {
   max-width: 90%;
 }
 
 
 
-@media (min-width: 70rem) { 
+@media (min-width: 70rem) {
   .active-grid {
     grid-template-columns: 1fr 1fr;
   }
-  
+
 }
 
-@media(max-width: 41.875rem){
+@media(max-width: 41.875rem) {
   .active-grid {
     margin-right: auto;
     margin-left: auto;
     padding: 20px;
   }
-  
+
 }
 
-@media(max-width:31.25rem){
+@media(max-width:31.25rem) {
 
   .club-info {
     margin-right: 1rem;
     margin-left: 1rem;
-  }  
-  
-  .club-info p{
+  }
+
+  .club-info p {
     font-size: 1.1rem;
   }
-  
-  .club-titles h2{
+
+  .club-titles h2 {
     font-size: 1rem;
   }
-  
-  .club-titles h3 {  
+
+  .club-titles h3 {
     font-size: 1.75rem;
   }
 }
 
-@media(max-width:21.875rem){
+@media(max-width:21.875rem) {
   .club-info {
-    padding:0px;
+    padding: 0px;
     margin-right: 0rem;
     margin-left: 0rem;
-  }  
+  }
 
-  .club-titles h2{
+  .club-titles h2 {
     font-size: 0.8rem;
   }
 
-  .club-titles h3 {  
+  .club-titles h3 {
     font-size: 1.5rem;
   }
 }
@@ -726,8 +750,8 @@ input:focus {
   padding-right: 4rem;
 }
 
-.overlay-button span{
-  display:none;
+.overlay-button span {
+  display: none;
 }
 
 .overlay-content {
@@ -744,22 +768,23 @@ input:focus {
   border-radius: 1.25rem;
 }
 
-.overlay-pfp-title{
+.overlay-pfp-title {
   display: flex;
   font-family: "Open Sans";
   font-style: normal;
 }
 
-.overlay-pfp-title img{
+.overlay-pfp-title img {
   max-width: 5rem;
   max-height: 5rem;
 }
 
-.overlay-title{
+.overlay-title {
   padding-top: 0.4rem;
   padding-left: 1rem;
 }
-.overlay-title h2{
+
+.overlay-title h2 {
   position: relative;
   top: 0.4rem;
   color: #4D4D4D;
@@ -767,7 +792,7 @@ input:focus {
   font-weight: 400;
 }
 
-.overlay-title h3{
+.overlay-title h3 {
   color: #000;
   font-size: 2.5rem;
   font-weight: 400;
@@ -775,7 +800,7 @@ input:focus {
   line-height: 120%;
 }
 
-.overlay-text p{
+.overlay-text p {
   max-width: 27.5rem;
   padding-top: 1.71rem;
   padding-right: 4.875rem;
@@ -788,10 +813,10 @@ input:focus {
   width: 16.25rem;
   height: 11.875rem;
   display: grid;
-  
+
 }
 
-.website{
+.website {
   background-color: #F3f3f3;
   border-radius: 0.8rem;
   height: 3.43rem;
@@ -800,12 +825,12 @@ input:focus {
   padding-top: 1.1rem;
 }
 
-.website img{
+.website img {
   width: 1.31rem;
   height: 1.31rem;
 }
 
-.website-btn{
+.website-btn {
   position: relative;
   bottom: 10%;
   left: 28%;
@@ -817,14 +842,14 @@ input:focus {
   text-decoration: none;
 }
 
-.backbutton{
+.backbutton {
   position: absolute;
   top: 2rem;
   left: 95%;
   transform: translate(-95%, 0%);
 }
 
-#clean-tech{
+#clean-tech {
   max-width: 60%;
 }
 
@@ -839,13 +864,13 @@ input:focus {
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
-    max-width: 90%; 
+    max-width: 90%;
   }
 
   .overlay-pfp-title {
-    display:flex;
+    display: flex;
     position: relative;
-    left:5%;
+    left: 5%;
   }
 
   .overlay-pfp-title img {
@@ -853,17 +878,18 @@ input:focus {
     max-height: 4rem;
   }
 
-  .overlay-title{
-    position:relative;
+  .overlay-title {
+    position: relative;
     bottom: 0.6rem;
   }
-  .overlay-title h2{
-    font-size: 1.2rem; 
+
+  .overlay-title h2 {
+    font-size: 1.2rem;
   }
 
   .overlay-title h3 {
     padding-top: 0.3rem;
-    padding-right:4rem;
+    padding-right: 4rem;
     font-size: 1.8rem;
     font-weight: 600;
   }
@@ -878,9 +904,9 @@ input:focus {
   }
 
   .buttons {
-    grid-template-columns: 1fr; 
-    gap: 0.5rem; 
-    width: 100%; 
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 100%;
     margin-top: 1rem;
   }
 
@@ -888,7 +914,7 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    justify-content: center; 
+    justify-content: center;
     padding: 1rem;
   }
 
@@ -908,11 +934,11 @@ input:focus {
   .backbutton {
     padding-top: 2rem;
     left: auto;
-    right: 5%; 
+    right: 5%;
     transform: translate(0%, -50%);
   }
 
-  #clean-tech{
+  #clean-tech {
     max-width: 100%;
   }
 }
@@ -922,12 +948,14 @@ input:focus {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .overlay-title h2, .overlay-title h3 {
-    font-size: 1.2rem; 
+
+  .overlay-title h2,
+  .overlay-title h3 {
+    font-size: 1.2rem;
   }
 
-  .overlay-title h2{
-    font-size: 1rem; 
+  .overlay-title h2 {
+    font-size: 1rem;
     padding-right: 4.3rem;
   }
 
@@ -988,7 +1016,7 @@ input:focus {
   color: #fff;
 }
 
-.footer hr{
+.footer hr {
   max-width: 84%;
   text-align: center;
   margin-left: auto;
@@ -1020,12 +1048,12 @@ input:focus {
   max-width: 570px;
 }
 
-#address{
+#address {
   padding-top: 2.5rem;
   text-align: right;
 }
 
-#copyr{
+#copyr {
   padding-top: 33px;
   padding-bottom: 86px;
   text-align: center;
@@ -1038,8 +1066,8 @@ input:focus {
   gap: 5px;
 }
 
-@media (max-width: 67.5rem){
-  #address{
+@media (max-width: 67.5rem) {
+  #address {
     padding-top: 2.5rem;
     text-align: left;
   }
@@ -1050,7 +1078,7 @@ input:focus {
     padding-top: 110px;
     padding-bottom: 130px;
   }
-  
+
   .footer .footer-row {
     padding-left: 87px;
 
@@ -1079,12 +1107,12 @@ input:focus {
     display: block;
   }
 
-  #address{
+  #address {
     padding-top: 2.5rem;
     text-align: left;
   }
 
-  #copyr{
+  #copyr {
     padding-top: 33px;
     padding-bottom: 86px;
     text-align: center;
@@ -1115,11 +1143,11 @@ input:focus {
 
 .become-linked {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
   max-width: 83.563rem;
   margin: 0 auto;
-  padding: 0 4.5rem; 
+  padding: 0 4.5rem;
 }
 
 .become-linked .button-link {
@@ -1129,7 +1157,7 @@ input:focus {
   border-radius: 0.5rem;
   text-decoration: none;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
@@ -1137,7 +1165,7 @@ input:focus {
 
 .become-linked .button-link:hover,
 .become-linked .button-link:focus {
-  background-color: #F47d29; 
+  background-color: #F47d29;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -1148,11 +1176,11 @@ input:focus {
   margin: 0.5rem 0;
 }
 
-.button-link h3{
-  text-align: center; 
+.button-link h3 {
+  text-align: center;
 }
 
-.button-link p{
+.button-link p {
   font-size: 1.1rem;
   margin-left: auto;
   margin-right: auto;
@@ -1161,21 +1189,21 @@ input:focus {
 
 .become-linked hr {
   width: 33%;
-  margin: 1.2rem auto 1.4rem; 
+  margin: 1.2rem auto 1.4rem;
   border: 0;
   height: 1px;
-  background-color: #000; 
+  background-color: #000;
 }
 
 @media (max-width: 64rem) {
   .become-linked {
     grid-template-columns: 1fr;
-    padding: 0 1.5rem; 
-    
+    padding: 0 1.5rem;
+
   }
 
   .become-linked .button-link {
-    width: 100%; 
+    width: 100%;
     max-width: 20.25rem;
     margin: 0 auto 1.5rem;
   }
@@ -1185,7 +1213,7 @@ input:focus {
 /* Header Logo */
 .header-logo {
   flex-grow: 1;
-  text-align: left; 
+  text-align: left;
 }
 
 .header-logo img {
@@ -1252,4 +1280,3 @@ header a.active {
     text-align: center;
   }
 }
-
