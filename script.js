@@ -9,10 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.overlay').forEach(overlay => {
         overlay.addEventListener('click', function (e) {
-            if (!e.target.classList.contains('backbutton')) {
-                return;
+            if (!e.target.closest('.overlay-content')) {
+                this.style.display = 'none';
             }
-            this.style.display = 'none';
         });
     });
 

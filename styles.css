@@ -6,7 +6,6 @@
 }
 
 
-
 /* DEFAULT */
 body {
   font-family: Open Sans, Helvetica, sans-serif;
@@ -22,6 +21,13 @@ input:focus {
   opacity: 50%;
 }
 
+
+/* Italics */
+.italics {
+  font-style: italic;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
 
 
 /* Home First section */
@@ -583,12 +589,7 @@ input:focus {
   }
 }
 
-/* Italics */
-.italics {
-  font-style: italic;
-  font-family: "Open Sans";
-  font-weight: 600;
-}
+
 
 
 /* Active Grid */
