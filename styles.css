@@ -476,6 +476,28 @@ input:focus {
   }
 }
 
+@media(max-width: 27.188rem){
+  .inv-header img{
+    max-width: 1.6rem;
+    left: 0.3rem;
+    margin-top: 0.2rem;
+  }
+  
+  #together{
+    left: 1.8rem;
+  }
+  
+  #enact, #together{
+    font-size: 1.3rem;
+  }
+}
+
+@media(max-width: 20rem){
+  #enact, #together{
+    font-size: 1.2rem;
+  }
+}
+
 
 /* Active Image */
 .active-image {
