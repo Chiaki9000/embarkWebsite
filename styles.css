@@ -476,28 +476,6 @@ input:focus {
   }
 }
 
-@media(max-width: 27.188rem){
-  .inv-header img{
-    max-width: 1.6rem;
-    left: 0.3rem;
-    margin-top: 0.2rem;
-  }
-  
-  #together{
-    left: 1.8rem;
-  }
-  
-  #enact, #together{
-    font-size: 1.3rem;
-  }
-}
-
-@media(max-width: 20rem){
-  #enact, #together{
-    font-size: 1.2rem;
-  }
-}
-
 
 /* Active Image */
 .active-image {
@@ -700,7 +678,7 @@ input:focus {
   max-width: 90%;
 }
 
-#SPFIRG-Push{
+#SPFIRG-Push {
   position: relative;
   bottom: 1rem;
 }
@@ -756,7 +734,7 @@ input:focus {
     font-size: 1.5rem;
   }
 
-  #Embark-Title{
+  #Embark-Title {
     font-size: 1rem;
   }
 }
@@ -875,7 +853,7 @@ input:focus {
   left: 95%;
   transform: translate(-95%, 0%);
   cursor: pointer;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #clean-tech {
@@ -1290,8 +1268,16 @@ header a.active {
   font-size: 1.8rem;
 }
 
-@media (max-width: 42rem)  {
+#Embark-Title {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 42rem) {
   #backpack-title {
+    font-size: 1.2rem;
+  }
+
+  #Embark-Title {
     font-size: 1.2rem;
   }
 }
